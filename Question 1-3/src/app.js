@@ -1,16 +1,31 @@
 const Rows = document.querySelectorAll("tr");
-Rows[1].className = "bg-default";
-Rows[2].className = "bg-primary";
-Rows[3].className = "bg-secondary";
-Rows[4].className = "bg-success";
-Rows[5].className = "bg-danger";
-Rows[6].className = "bg-warning";
-Rows[7].className = "bg-info";
-Rows[8].className = "bg-light";
-Rows[9].className = "bg-dark";
+const setBg = (colorName, rowNumber) => {
+  Rows[rowNumber].className = `bg-${colorName}`;
+};
+
+setBg("default", 1);
+setBg("primary", 2);
+setBg("secondary", 3);
+setBg("success", 4);
+setBg("danger", 5);
+setBg("warning", 6);
+setBg("info", 7);
+setBg("light", 8);
+setBg("dark", 9);
 
 const delRows = () => {
   for (let i = 1; i < 6; i++) {
     Rows[i].remove();
+  }
+};
+
+const addRows = () => {
+  const table = document.getElementById("tbl");
+
+  for (let i = 0; i < 3; i++) {
+    const tr = document.createElement("tr");
+    tr.innerHTML = "<td>New Color</td><td>Cell</td><td>Cell</td>";
+    tr.firstChild.className = "font-semibold";
+    table.append(tr);
   }
 };

@@ -9,11 +9,14 @@
     <div class="flex flex-col justify-center p-10 gap-5">
       <button
         onclick="delRows()"
-        class="rounded font-semibold w-1/6 bg-danger p-2 hover:bg-red-300 hover:font-bold"
+        class="rounded font-semibold bg-danger p-2 hover:bg-red-300 hover:font-bold"
       >
         Remove Rows 1-5
       </button>
-      <table class="table-auto w-full border border-slate-300 text-center h-96">
+      <table
+        id="tbl"
+        class="table-auto w-full border border-slate-300 text-center h-96"
+      >
         <thead>
           <tr class="font-semibold border border-slate-300">
             <td>Class</td>
@@ -69,6 +72,12 @@
           </tr>
         </tbody>
       </table>
+      <button
+        onclick="addRows()"
+        class="rounded font-semibold bg-success p-2 hover:bg-green-300 hover:font-bold"
+      >
+        Add 3 rows
+      </button>
     </div>
 
     <script src="app.js"></script>
