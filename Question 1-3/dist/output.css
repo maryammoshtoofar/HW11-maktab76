@@ -500,12 +500,36 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 100%;
 }
 
+.w-1\/6 {
+  width: 16.666667%;
+}
+
 .table-auto {
   table-layout: auto;
 }
 
+.flex-col {
+  flex-direction: column;
+}
+
 .justify-center {
   justify-content: center;
+}
+
+.gap-1 {
+  gap: 0.25rem;
+}
+
+.gap-3 {
+  gap: 0.75rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
+}
+
+.rounded {
+  border-radius: 0.25rem;
 }
 
 .border-8 {
@@ -595,6 +619,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 5rem;
 }
 
+.p-1 {
+  padding: 0.25rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -611,4 +639,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-red-500 {
   --tw-text-opacity: 1;
   color: rgb(239 68 68 / var(--tw-text-opacity));
+}
+
+.hover\:bg-red-500:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-red-300:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 165 165 / var(--tw-bg-opacity));
+}
+
+.hover\:font-bold:hover {
+  font-weight: 700;
 }

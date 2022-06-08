@@ -8,3 +8,9 @@ Rows[6].className = "bg-warning";
 Rows[7].className = "bg-info";
 Rows[8].className = "bg-light";
 Rows[9].className = "bg-dark";
+
+const delRows = () => {
+  for (let i = 1; i < 6; i++) {
+    Rows[i].remove();
+  }
+};

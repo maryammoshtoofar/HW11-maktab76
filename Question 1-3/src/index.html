@@ -6,7 +6,13 @@
     <link href="/dist/output.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="flex justify-center p-10">
+    <div class="flex flex-col justify-center p-10 gap-5">
+      <button
+        onclick="delRows()"
+        class="rounded font-semibold w-1/6 bg-danger p-2 hover:bg-red-300 hover:font-bold"
+      >
+        Remove Rows 1-5
+      </button>
       <table class="table-auto w-full border border-slate-300 text-center h-96">
         <thead>
           <tr class="font-semibold border border-slate-300">
@@ -14,7 +20,7 @@
             <td>Heading</td>
             <td>Heading</td>
           </tr>
-        </thead> 
+        </thead>
         <tbody>
           <tr>
             <td class="font-semibold">Default</td>
